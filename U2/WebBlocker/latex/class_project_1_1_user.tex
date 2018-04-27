@@ -1,0 +1,234 @@
+\hypertarget{class_project_1_1_user}{}\section{Project\+:\+:User KlasÄ—}
+\label{class_project_1_1_user}\index{Project\+::\+User@{Project\+::\+User}}
+
+
+Klasës \hyperlink{class_project_1_1_user}{User} paskirtis inicializuoti vartotojà, leisti registruotis, prisijungti.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+\subsection*{VieÅ¡i Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_1_1_user_a4a0137053e591fbb79d9057dd7d2283d}{User} ()
+\begin{DoxyCompactList}\small\item\em Numatytasis konstruktorius. \end{DoxyCompactList}\item 
+\hyperlink{class_project_1_1_user_a9a57ac8d4bb34c3eb6ca9ff77b6e1a35}{User} (std\+::string name, std\+::string surname)
+\begin{DoxyCompactList}\small\item\em Konstruktorius inicializuojanti objekto reikðmes -\/ vardà ir pavardæ. \end{DoxyCompactList}\item 
+\hyperlink{class_project_1_1_user_a4239b7ad360c12a1756550a1adfcc86c}{User} (std\+::string name, std\+::string surname, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Konstruktorius inicializuojanti objekto reikðmes -\/ vardà ir pavardæ, slaptaþodá. \end{DoxyCompactList}\item 
+\hyperlink{class_project_1_1_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{$\sim$\+User} ()
+\begin{DoxyCompactList}\small\item\em Destruktorius. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_user_a023069628fe896a31b9adb9d21496326}{set\+Name} (std\+::string n)
+\begin{DoxyCompactList}\small\item\em Setter\textquotesingle{}iai ir getter\textquotesingle{}iai. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_user_a242f58462e9f6813bc91773b0227b448}{set\+Password} (std\+::string pasw)
+\item 
+void \hyperlink{class_project_1_1_user_a7a95caa87e043928b28140f862304e75}{set\+Surname} (std\+::string s)
+\item 
+int \hyperlink{class_project_1_1_user_a95723cd69380bd7e298192379e94c277}{get\+Person\+Id} ()
+\item 
+std\+::string \hyperlink{class_project_1_1_user_a33d343edda32a72bf28d41b22b0de1bd}{get\+Name} ()
+\item 
+std\+::string \hyperlink{class_project_1_1_user_aad2f2d9649b5b0aaf451423abf93c63b}{get\+Password} ()
+\item 
+std\+::string \hyperlink{class_project_1_1_user_a76d505690c01bc8ae9e72c177f9ab983}{get\+Surname} ()
+\item 
+std\+::string \hyperlink{class_project_1_1_user_a64968da937c80f85d772477492d9c79e}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em Metodas gràþinantis tekstinæ objekto reprezentacijà. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statiniai VieÅ¡i Metodai}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_project_1_1_user_a03e64edceb241180b7c9f7be593d6342}{get\+Number\+Of\+Objects} ()
+\begin{DoxyCompactList}\small\item\em Metodas gràþina gyvø objektø skaièiø klasëje. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_1_1_user_a2a445140ca02df50b412138fbbcbf41b}{print\+Test} (bool result)
+\begin{DoxyCompactList}\small\item\em Klasës testavimo metodai. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_1_1_user_a766ae970fd886512a9eb124f29867561}{test\+Operator} ()
+\item 
+static void \hyperlink{class_project_1_1_user_abcc1840bc7de6939db4bee6d1f3bb380}{user\+Test1} ()
+\item 
+static void \hyperlink{class_project_1_1_user_acf74361dcbd5719e2d3641ce36945f6a}{user\+Test2} ()
+\item 
+static void \hyperlink{class_project_1_1_user_ac04ec4c57d3a6d9d5f0807b4cc896fcc}{user\+Test3} ()
+\end{DoxyCompactItemize}
+\subsection*{Draugai}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_project_1_1_user_a6c48c9c48ef644b57bb2ce79fa04d824}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_project_1_1_user}{User} \&p)
+\begin{DoxyCompactList}\small\item\em Perraðomi I/O operatoriai. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{class_project_1_1_user_a0971e01ddcc7f25baecd506182e0d073}{operator$>$$>$} (std\+::istream \&is, \hyperlink{class_project_1_1_user}{User} \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Smulkus apraÅ¡ymas}
+Klasës \hyperlink{class_project_1_1_user}{User} paskirtis inicializuoti vartotojà, leisti registruotis, prisijungti. 
+
+\subsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_user_a4a0137053e591fbb79d9057dd7d2283d}\label{class_project_1_1_user_a4a0137053e591fbb79d9057dd7d2283d}} 
+\index{Project\+::\+User@{Project\+::\+User}!User@{User}}
+\index{User@{User}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Numatytasis konstruktorius. 
+
+\mbox{\Hypertarget{class_project_1_1_user_a9a57ac8d4bb34c3eb6ca9ff77b6e1a35}\label{class_project_1_1_user_a9a57ac8d4bb34c3eb6ca9ff77b6e1a35}} 
+\index{Project\+::\+User@{Project\+::\+User}!User@{User}}
+\index{User@{User}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{surname }\end{DoxyParamCaption})}
+
+
+
+Konstruktorius inicializuojanti objekto reikðmes -\/ vardà ir pavardæ. 
+
+\mbox{\Hypertarget{class_project_1_1_user_a4239b7ad360c12a1756550a1adfcc86c}\label{class_project_1_1_user_a4239b7ad360c12a1756550a1adfcc86c}} 
+\index{Project\+::\+User@{Project\+::\+User}!User@{User}}
+\index{User@{User}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{surname,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+
+
+Konstruktorius inicializuojanti objekto reikðmes -\/ vardà ir pavardæ, slaptaþodá. 
+
+\mbox{\Hypertarget{class_project_1_1_user_ac00b72ad64eb4149f7b21b9f5468c2b2}\label{class_project_1_1_user_ac00b72ad64eb4149f7b21b9f5468c2b2}} 
+\index{Project\+::\+User@{Project\+::\+User}!````~User@{$\sim$\+User}}
+\index{````~User@{$\sim$\+User}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{$\sim$\+User()}{~User()}}
+{\footnotesize\ttfamily User\+::$\sim$\+User (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Destruktorius. 
+
+
+
+\subsection{MetodÅ³ Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_user_a33d343edda32a72bf28d41b22b0de1bd}\label{class_project_1_1_user_a33d343edda32a72bf28d41b22b0de1bd}} 
+\index{Project\+::\+User@{Project\+::\+User}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily std\+::string User\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_project_1_1_user_a03e64edceb241180b7c9f7be593d6342}\label{class_project_1_1_user_a03e64edceb241180b7c9f7be593d6342}} 
+\index{Project\+::\+User@{Project\+::\+User}!get\+Number\+Of\+Objects@{get\+Number\+Of\+Objects}}
+\index{get\+Number\+Of\+Objects@{get\+Number\+Of\+Objects}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{get\+Number\+Of\+Objects()}{getNumberOfObjects()}}
+{\footnotesize\ttfamily int User\+::get\+Number\+Of\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodas gràþina gyvø objektø skaièiø klasëje. 
+
+\mbox{\Hypertarget{class_project_1_1_user_aad2f2d9649b5b0aaf451423abf93c63b}\label{class_project_1_1_user_aad2f2d9649b5b0aaf451423abf93c63b}} 
+\index{Project\+::\+User@{Project\+::\+User}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily std\+::string User\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_project_1_1_user_a95723cd69380bd7e298192379e94c277}\label{class_project_1_1_user_a95723cd69380bd7e298192379e94c277}} 
+\index{Project\+::\+User@{Project\+::\+User}!get\+Person\+Id@{get\+Person\+Id}}
+\index{get\+Person\+Id@{get\+Person\+Id}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{get\+Person\+Id()}{getPersonId()}}
+{\footnotesize\ttfamily int User\+::get\+Person\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_project_1_1_user_a76d505690c01bc8ae9e72c177f9ab983}\label{class_project_1_1_user_a76d505690c01bc8ae9e72c177f9ab983}} 
+\index{Project\+::\+User@{Project\+::\+User}!get\+Surname@{get\+Surname}}
+\index{get\+Surname@{get\+Surname}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{get\+Surname()}{getSurname()}}
+{\footnotesize\ttfamily std\+::string User\+::get\+Surname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_project_1_1_user_a2a445140ca02df50b412138fbbcbf41b}\label{class_project_1_1_user_a2a445140ca02df50b412138fbbcbf41b}} 
+\index{Project\+::\+User@{Project\+::\+User}!print\+Test@{print\+Test}}
+\index{print\+Test@{print\+Test}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{print\+Test()}{printTest()}}
+{\footnotesize\ttfamily void Project\+::\+User\+::print\+Test (\begin{DoxyParamCaption}\item[{bool}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Klasës testavimo metodai. 
+
+\mbox{\Hypertarget{class_project_1_1_user_a023069628fe896a31b9adb9d21496326}\label{class_project_1_1_user_a023069628fe896a31b9adb9d21496326}} 
+\index{Project\+::\+User@{Project\+::\+User}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void User\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+
+
+Setter\textquotesingle{}iai ir getter\textquotesingle{}iai. 
+
+\mbox{\Hypertarget{class_project_1_1_user_a242f58462e9f6813bc91773b0227b448}\label{class_project_1_1_user_a242f58462e9f6813bc91773b0227b448}} 
+\index{Project\+::\+User@{Project\+::\+User}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily void User\+::set\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{pasw }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_project_1_1_user_a7a95caa87e043928b28140f862304e75}\label{class_project_1_1_user_a7a95caa87e043928b28140f862304e75}} 
+\index{Project\+::\+User@{Project\+::\+User}!set\+Surname@{set\+Surname}}
+\index{set\+Surname@{set\+Surname}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{set\+Surname()}{setSurname()}}
+{\footnotesize\ttfamily void User\+::set\+Surname (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_project_1_1_user_a766ae970fd886512a9eb124f29867561}\label{class_project_1_1_user_a766ae970fd886512a9eb124f29867561}} 
+\index{Project\+::\+User@{Project\+::\+User}!test\+Operator@{test\+Operator}}
+\index{test\+Operator@{test\+Operator}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{test\+Operator()}{testOperator()}}
+{\footnotesize\ttfamily void User\+::test\+Operator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_user_a64968da937c80f85d772477492d9c79e}\label{class_project_1_1_user_a64968da937c80f85d772477492d9c79e}} 
+\index{Project\+::\+User@{Project\+::\+User}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string User\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas gràþinantis tekstinæ objekto reprezentacijà. 
+
+\mbox{\Hypertarget{class_project_1_1_user_abcc1840bc7de6939db4bee6d1f3bb380}\label{class_project_1_1_user_abcc1840bc7de6939db4bee6d1f3bb380}} 
+\index{Project\+::\+User@{Project\+::\+User}!user\+Test1@{user\+Test1}}
+\index{user\+Test1@{user\+Test1}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{user\+Test1()}{userTest1()}}
+{\footnotesize\ttfamily void User\+::user\+Test1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_user_acf74361dcbd5719e2d3641ce36945f6a}\label{class_project_1_1_user_acf74361dcbd5719e2d3641ce36945f6a}} 
+\index{Project\+::\+User@{Project\+::\+User}!user\+Test2@{user\+Test2}}
+\index{user\+Test2@{user\+Test2}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{user\+Test2()}{userTest2()}}
+{\footnotesize\ttfamily void User\+::user\+Test2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_user_ac04ec4c57d3a6d9d5f0807b4cc896fcc}\label{class_project_1_1_user_ac04ec4c57d3a6d9d5f0807b4cc896fcc}} 
+\index{Project\+::\+User@{Project\+::\+User}!user\+Test3@{user\+Test3}}
+\index{user\+Test3@{user\+Test3}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{user\+Test3()}{userTest3()}}
+{\footnotesize\ttfamily void User\+::user\+Test3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{DraugiÅ¡kÅ³ Ir SusijusiÅ³ FunkcijÅ³ Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_user_a6c48c9c48ef644b57bb2ce79fa04d824}\label{class_project_1_1_user_a6c48c9c48ef644b57bb2ce79fa04d824}} 
+\index{Project\+::\+User@{Project\+::\+User}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{class_project_1_1_user}{User} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Perraðomi I/O operatoriai. 
+
+\mbox{\Hypertarget{class_project_1_1_user_a0971e01ddcc7f25baecd506182e0d073}\label{class_project_1_1_user_a0971e01ddcc7f25baecd506182e0d073}} 
+\index{Project\+::\+User@{Project\+::\+User}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Project\+::\+User@{Project\+::\+User}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\hyperlink{class_project_1_1_user}{User} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dokumentacija Å¡iai klasei sugeneruota iÅ¡ Å¡iÅ³ failÅ³\+:\begin{DoxyCompactItemize}
+\item 
+Web\+Blocker/\hyperlink{_user_8h}{User.\+h}\item 
+Web\+Blocker/\hyperlink{_user_8cpp}{User.\+cpp}\end{DoxyCompactItemize}

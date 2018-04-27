@@ -1,0 +1,18 @@
+Timer class test started
+OK!
+OK!
+OK!
+OK!
+Timer testing finished
+User class test started
+OK!
+OK!
+OK!
+OK!
+User testing finished
+WebPage class test started
+OK!
+OK!
+OK!
+OK!
+WebPage testing finished

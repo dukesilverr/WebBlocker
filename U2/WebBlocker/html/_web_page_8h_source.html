@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: WebBlocker/WebPage.h iÅ¡eities tekstas</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'PaieÅ¡ka');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','PaieÅ¡ka');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d4ddf7c2ea881805d0a17eda78499356.html">WebBlocker</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">WebPage.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_web_page_8h.html">Eiti Ä¯ Å¡io failo dokumentacijÄ….</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_project.html">Project</a> {</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_project_1_1_web_page.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_project_1_1_web_page.html">WebPage</a> {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        std::string webpage;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>: </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_project_1_1_web_page.html#afc30ba350232f78941f8208835ea5f03">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_project_1_1_web_page.html">WebPage</a>&amp; p);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">friend</span> std::istream&amp; <a class="code" href="class_project_1_1_web_page.html#a54182d83685ff46a9a4724be5afd4db5">operator &gt;&gt; </a>(std::istream&amp; is, <a class="code" href="class_project_1_1_web_page.html">WebPage</a>&amp; p);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_project_1_1_web_page.html#a07ef27add77ba1b3e218ec4a190e46f6">WebPage</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="class_project_1_1_web_page.html#a07ef27add77ba1b3e218ec4a190e46f6">WebPage</a>(std::string webpage);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_project_1_1_web_page.html#a51a243430487dba0296e00f4cbff39a5">~WebPage</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_project_1_1_web_page.html#a8478fac12a3bfa919b188b9a3fe88b30">isCorrect</a>(std::string word);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#aa0b486716c7a2eda906e640fd1f4c888">setWebpage</a>(std::string web);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::string <a class="code" href="class_project_1_1_web_page.html#ad8d1b4e4c0dba4f6dad5df848c975166">getWebpage</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#a8f69cb8d6b87d12ca0dd45906cbe939b">writingToFile</a>(std::string text, std::string path = <span class="stringliteral">&quot;C:\\Windows\\System32\\drivers\\etc\\hosts&quot;</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::string <a class="code" href="class_project_1_1_web_page.html#ad12e94aa1a3ddc412cf9b2f613b3f142">concatWebName</a>(std::string web);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::string <a class="code" href="class_project_1_1_web_page.html#a8bbfd95f96840dfb6db43ca621a0240a">toString</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_project_1_1_web_page.html#a8ed690a6f44507d7fc603c081ac8d67c">returnLine</a>(std::string file, std::string search);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#a76802591a808d7b9859a50dfacb144aa">deleteLines</a>(<span class="keyword">const</span> std::string &amp; filename, <span class="keywordtype">int</span> start, <span class="keywordtype">int</span> skip = 1);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#a5c933ce4b1c2148c06eccad895b565ea">printTest2</a>(<span class="keywordtype">bool</span> result);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#af6f9a9731bd9d54afdd8865aac4388e6">testOperator2</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#aa1eb5fefce5cd8b0358dd9ef725bf60c">webTest1</a>();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#a0259d5061f71619c54f6c9feb7b47b94">webTest2</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_web_page.html#a4fc34601892df0723b187da9894c04c2">webTest3</a>();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    };</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="ttc" id="class_project_1_1_web_page_html_a51a243430487dba0296e00f4cbff39a5"><div class="ttname"><a href="class_project_1_1_web_page.html#a51a243430487dba0296e00f4cbff39a5">Project::WebPage::~WebPage</a></div><div class="ttdeci">~WebPage()</div><div class="ttdoc">Destruktorius, atlaisvinantis atmintá, iðtrinantis objektà. </div><div class="ttdef"><b>Definition:</b> WebPage.cpp:40</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a8478fac12a3bfa919b188b9a3fe88b30"><div class="ttname"><a href="class_project_1_1_web_page.html#a8478fac12a3bfa919b188b9a3fe88b30">Project::WebPage::isCorrect</a></div><div class="ttdeci">bool isCorrect(std::string word)</div><div class="ttdoc">Metodas, graþinantis true reikðmæ, jei þodis paduotas þodis atitinka reikalavimus, nëra tuðèias...</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:43</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_afc30ba350232f78941f8208835ea5f03"><div class="ttname"><a href="class_project_1_1_web_page.html#afc30ba350232f78941f8208835ea5f03">Project::WebPage::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const WebPage &amp;p)</div><div class="ttdoc">Perraðyti I/O operatoriai. </div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a0259d5061f71619c54f6c9feb7b47b94"><div class="ttname"><a href="class_project_1_1_web_page.html#a0259d5061f71619c54f6c9feb7b47b94">Project::WebPage::webTest2</a></div><div class="ttdeci">static void webTest2()</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:222</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_aa0b486716c7a2eda906e640fd1f4c888"><div class="ttname"><a href="class_project_1_1_web_page.html#aa0b486716c7a2eda906e640fd1f4c888">Project::WebPage::setWebpage</a></div><div class="ttdeci">void setWebpage(std::string web)</div><div class="ttdoc">&quot;Setter&amp;#39;is&quot; - prikiria reikðmæ webpage, jei paduodama tekstinë eilutë atitinka metodo isCorrect reikalavi...</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:51</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a4fc34601892df0723b187da9894c04c2"><div class="ttname"><a href="class_project_1_1_web_page.html#a4fc34601892df0723b187da9894c04c2">Project::WebPage::webTest3</a></div><div class="ttdeci">static void webTest3()</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:238</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_aa1eb5fefce5cd8b0358dd9ef725bf60c"><div class="ttname"><a href="class_project_1_1_web_page.html#aa1eb5fefce5cd8b0358dd9ef725bf60c">Project::WebPage::webTest1</a></div><div class="ttdeci">static void webTest1()</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:205</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a5c933ce4b1c2148c06eccad895b565ea"><div class="ttname"><a href="class_project_1_1_web_page.html#a5c933ce4b1c2148c06eccad895b565ea">Project::WebPage::printTest2</a></div><div class="ttdeci">static void printTest2(bool result)</div><div class="ttdoc">Metodai klasës testavimui. </div><div class="ttdef"><b>Definition:</b> WebPage.cpp:172</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_ad12e94aa1a3ddc412cf9b2f613b3f142"><div class="ttname"><a href="class_project_1_1_web_page.html#ad12e94aa1a3ddc412cf9b2f613b3f142">Project::WebPage::concatWebName</a></div><div class="ttdeci">std::string concatWebName(std::string web)</div><div class="ttdoc">Metodas, sujungiantis paduotà tekstinæ eilutæ (puslapá, kuris bus blokuojamas), su tam tikru tekstu...</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:90</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a8bbfd95f96840dfb6db43ca621a0240a"><div class="ttname"><a href="class_project_1_1_web_page.html#a8bbfd95f96840dfb6db43ca621a0240a">Project::WebPage::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Metodas, kuris sukuria tektinæ objekto reprezentacijà. </div><div class="ttdef"><b>Definition:</b> WebPage.cpp:97</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_af6f9a9731bd9d54afdd8865aac4388e6"><div class="ttname"><a href="class_project_1_1_web_page.html#af6f9a9731bd9d54afdd8865aac4388e6">Project::WebPage::testOperator2</a></div><div class="ttdeci">static void testOperator2()</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:182</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a07ef27add77ba1b3e218ec4a190e46f6"><div class="ttname"><a href="class_project_1_1_web_page.html#a07ef27add77ba1b3e218ec4a190e46f6">Project::WebPage::WebPage</a></div><div class="ttdeci">WebPage()</div><div class="ttdoc">Numatytasis konstruktorius. </div><div class="ttdef"><b>Definition:</b> WebPage.cpp:37</div></div>
+<div class="ttc" id="namespace_project_html"><div class="ttname"><a href="namespace_project.html">Project</a></div><div class="ttdef"><b>Definition:</b> Timer.h:18</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a54182d83685ff46a9a4724be5afd4db5"><div class="ttname"><a href="class_project_1_1_web_page.html#a54182d83685ff46a9a4724be5afd4db5">Project::WebPage::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;is, WebPage &amp;p)</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a8f69cb8d6b87d12ca0dd45906cbe939b"><div class="ttname"><a href="class_project_1_1_web_page.html#a8f69cb8d6b87d12ca0dd45906cbe939b">Project::WebPage::writingToFile</a></div><div class="ttdeci">void writingToFile(std::string text, std::string path=&quot;C:\indows\ystem32\rivers\tc\osts&quot;)</div><div class="ttdoc">Metodas, áraðantis á numatytà kelià C:\Windows\System32\drivers\etc\hosts (á ðià vietà áraðius tinklapi su tam t...</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:70</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_ad8d1b4e4c0dba4f6dad5df848c975166"><div class="ttname"><a href="class_project_1_1_web_page.html#ad8d1b4e4c0dba4f6dad5df848c975166">Project::WebPage::getWebpage</a></div><div class="ttdeci">std::string getWebpage()</div><div class="ttdoc">Getter&amp;#39;is&quot; gràþina webpage lauko reikðmæ. </div><div class="ttdef"><b>Definition:</b> WebPage.cpp:66</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a8ed690a6f44507d7fc603c081ac8d67c"><div class="ttname"><a href="class_project_1_1_web_page.html#a8ed690a6f44507d7fc603c081ac8d67c">Project::WebPage::returnLine</a></div><div class="ttdeci">int returnLine(std::string file, std::string search)</div><div class="ttdoc">Metodas, surandantis ir gràþinantis faile rastos tekstinës eilutës vietà failæ (eilutæ). </div><div class="ttdef"><b>Definition:</b> WebPage.cpp:103</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html_a76802591a808d7b9859a50dfacb144aa"><div class="ttname"><a href="class_project_1_1_web_page.html#a76802591a808d7b9859a50dfacb144aa">Project::WebPage::deleteLines</a></div><div class="ttdeci">void deleteLines(const std::string &amp;filename, int start, int skip=1)</div><div class="ttdoc">Metodas iðtrinantis eilutes ið failo. (Tinklapio atblokavimas, iðtrinant eilutæ ið hosts failo...</div><div class="ttdef"><b>Definition:</b> WebPage.cpp:121</div></div>
+<div class="ttc" id="class_project_1_1_web_page_html"><div class="ttname"><a href="class_project_1_1_web_page.html">Project::WebPage</a></div><div class="ttdoc">Klasës WebPage paskirtis inicializuoti, uþblokuoti, atblokuoti tinklapá. </div><div class="ttdef"><b>Definition:</b> WebPage.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Sugeneruota &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

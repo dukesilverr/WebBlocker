@@ -1,0 +1,37 @@
+CC = g++
+FLAGS = -Wall
+
+OBJS = Taupymas.o TaupymoKategorija.o Planas.o
+HEADERS = Taupymas.h TaupymoKategorija.h Planas.h
+
+run : main.exe
+	main
+test : test.exe
+	test
+
+rebuild : clean build
+
+build : main.exe test.exe
+	
+debug : FLAGS += -DDEBUG 
+debug : clean test.exe
+	test
+	
+main.exe : main.cpp ${OBJS} ${HEADERS}
+	${CC} ${FLAGS} main2.cpp ${OBJS} -o main.exe	
+test.exe : test.cpp ${OBJS} ${HEADERS}
+	${CC} ${FLAGS} main1.cpp ${OBJS} -o test.exe
+	
+
+Timer.o : Timer.cpp Timer.h
+	${CC} -c ${FLAGS} Timer.cpp -o Timer.o
+	
+User.o : User.cpp User.h
+	${CC} -c ${FLAGS} User.cpp -o User.o	
+
+WebPage.o : WebPage.cpp WebPage.h
+	${CC} -c ${FLAGS}  WebPage.cpp -o WebPage.o
+	
+	
+clean :
+	del -f *.exe *.o

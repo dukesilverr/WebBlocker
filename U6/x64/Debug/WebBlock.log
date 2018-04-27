@@ -1,0 +1,12 @@
+﻿  Blocker.cpp
+Blocker.cpp(54): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+Blocker.cpp(57): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  MyForm.cpp
+  Timer.cpp
+  User.cpp
+  WebPage.cpp
+  Generating Code...
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  Blocker.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  WebBlock.vcxproj -> C:\Users\Doviles\Desktop\3 semestras\WebBlocker\WebBlocker\U6\x64\Debug\WebBlocker.exe
+  WebBlock.vcxproj -> C:\Users\Doviles\Desktop\3 semestras\WebBlocker\WebBlocker\U6\x64\Debug\WebBlocker.pdb (Partial PDB)

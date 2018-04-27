@@ -1,0 +1,234 @@
+\hypertarget{class_project_1_1_timer}{}\section{Project\+:\+:Timer KlasÄ—}
+\label{class_project_1_1_timer}\index{Project\+::\+Timer@{Project\+::\+Timer}}
+
+
+Klasë \hyperlink{class_project_1_1_timer}{Timer} priskiria teisingas reikðmes valandoms, minutës, sekundëms . Nustaèius laikà, klasës paskirtis paleisti laikmatá.  
+
+
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{VieÅ¡i Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_1_1_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer} ()
+\begin{DoxyCompactList}\small\item\em Konstruktorius be paduodmø parametrø priskiria default\textquotesingle{}ines reikðmes valandoms, minutëms ir sekundëms (0). \end{DoxyCompactList}\item 
+\hyperlink{class_project_1_1_timer_a14fa469c4c295c5fa6e66a4ad1092146}{$\sim$\+Timer} ()
+\begin{DoxyCompactList}\small\item\em Destruktorius iðtrina sukurtus klasës \hyperlink{class_project_1_1_timer}{Timer} objektus. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_timer_a95d52359e05aa0be2140266aabe93ce5}{set\+Timerh} (clock\+\_\+t h)
+\begin{DoxyCompactList}\small\item\em Metodas set\+Timerh priskiria valandoms reikðmæ, jei ji yra tarp 0 ir 23, kitu atvëju meta klaidà. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_timer_a191f9c2f6f18921e76b5fe64c656bb65}{set\+Timermin} (clock\+\_\+t min)
+\begin{DoxyCompactList}\small\item\em Metodas set\+Timermin priskiria minutëms reikðmæ, jei ji yra tarp 0 ir 59, kitu atvëju meta klaidà. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_timer_aab9ac6f73559fd3b7c8e1f641b5b57b0}{set\+Timersec} (clock\+\_\+t sec)
+\begin{DoxyCompactList}\small\item\em metodas \hyperlink{class_project_1_1_timer_aab9ac6f73559fd3b7c8e1f641b5b57b0}{set\+Timersec()} priskiria sekundëms reikðmæ, jei ji yra tarp 0 ir 59, kitu atvëju meta klaidà. \end{DoxyCompactList}\item 
+clock\+\_\+t \hyperlink{class_project_1_1_timer_a56ce8f78c70612ecbf54cb03fcb1da03}{get\+Timerh} ()
+\begin{DoxyCompactList}\small\item\em Metodas \hyperlink{class_project_1_1_timer_a56ce8f78c70612ecbf54cb03fcb1da03}{get\+Timerh()} gauna priskirtos valandos reikðmæ. \end{DoxyCompactList}\item 
+clock\+\_\+t \hyperlink{class_project_1_1_timer_a189bac667a14752a9b63761c0c65f80e}{get\+Timermin} ()
+\begin{DoxyCompactList}\small\item\em Metodas \hyperlink{class_project_1_1_timer_a189bac667a14752a9b63761c0c65f80e}{get\+Timermin()} gauna priskirtos minutës reikðmæ. \end{DoxyCompactList}\item 
+clock\+\_\+t \hyperlink{class_project_1_1_timer_a1002ea9a2d0edaf7ec20c12249f3470d}{get\+Timersec} ()
+\begin{DoxyCompactList}\small\item\em Metodas \hyperlink{class_project_1_1_timer_a1002ea9a2d0edaf7ec20c12249f3470d}{get\+Timersec()} gauna priskirtos sekundës reikðmæ. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_project_1_1_timer_ac50860ce883294b2cd67a12d01973c50}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em Metodas to\+String paverèia objekto informacijà á tekstinæ eilutæ. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_timer_a21f25ce7c7c91dfcfd79cf5812111b43}{timer\+Go} ()
+\begin{DoxyCompactList}\small\item\em Metodas \hyperlink{class_project_1_1_timer_a21f25ce7c7c91dfcfd79cf5812111b43}{timer\+Go()} pagal priskirtas valandø, minuèiø ir sekundþiø reikðmes paleidþia mini laikmatá. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statiniai VieÅ¡i Metodai}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_project_1_1_timer_a943ad61a8e29a89565c29f9ca03ff28b}{print\+Test1} (bool result)
+\begin{DoxyCompactList}\small\item\em Metodas \hyperlink{class_project_1_1_timer_a943ad61a8e29a89565c29f9ca03ff28b}{print\+Test1(bool result)} patikrina ar gauta teisinga reikðmë. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_1_1_timer_a47d73da76c17b7a0e89f1aceed4070d4}{test\+Operator1} ()
+\begin{DoxyCompactList}\small\item\em Metodas \hyperlink{class_project_1_1_timer_a47d73da76c17b7a0e89f1aceed4070d4}{test\+Operator1()} testuoja ar gerai veikia \hyperlink{class_project_1_1_timer_ac50860ce883294b2cd67a12d01973c50}{to\+String()} metodas. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_1_1_timer_a4791af50d7f67b48310ad57362647e3d}{timer\+Test1} ()
+\begin{DoxyCompactList}\small\item\em Kiti testai. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_1_1_timer_acba87dd2e23c49c982620c431c23abff}{timer\+Test2} ()
+\item 
+static void \hyperlink{class_project_1_1_timer_aa59a890870d30a23ab5d701cc1e99e95}{timer\+Test3} ()
+\end{DoxyCompactItemize}
+\subsection*{Draugai}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_project_1_1_timer_a35c5a3ad5a5cf2fef5824f2b58390fe1}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_project_1_1_timer}{Timer} \&p)
+\begin{DoxyCompactList}\small\item\em Operatorius atspausdina klasës objekto turiná. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{class_project_1_1_timer_aec0e061950e4ba7ce50ff03fb66b019a}{operator$>$$>$} (std\+::istream \&is, \hyperlink{class_project_1_1_timer}{Timer} \&p)
+\begin{DoxyCompactList}\small\item\em Operatorius raðo á objekto turiná. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Smulkus apraÅ¡ymas}
+Klasë \hyperlink{class_project_1_1_timer}{Timer} priskiria teisingas reikðmes valandoms, minutës, sekundëms . Nustaèius laikà, klasës paskirtis paleisti laikmatá. 
+
+\subsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_timer_a5f16e8da27d2a5a5242dead46de05d97}\label{class_project_1_1_timer_a5f16e8da27d2a5a5242dead46de05d97}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{Timer()}{Timer()}}
+{\footnotesize\ttfamily Timer\+::\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Konstruktorius be paduodmø parametrø priskiria default\textquotesingle{}ines reikðmes valandoms, minutëms ir sekundëms (0). 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a14fa469c4c295c5fa6e66a4ad1092146}\label{class_project_1_1_timer_a14fa469c4c295c5fa6e66a4ad1092146}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!````~Timer@{$\sim$\+Timer}}
+\index{````~Timer@{$\sim$\+Timer}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{$\sim$\+Timer()}{~Timer()}}
+{\footnotesize\ttfamily Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktorius iðtrina sukurtus klasës \hyperlink{class_project_1_1_timer}{Timer} objektus. 
+
+
+
+\subsection{MetodÅ³ Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_timer_a56ce8f78c70612ecbf54cb03fcb1da03}\label{class_project_1_1_timer_a56ce8f78c70612ecbf54cb03fcb1da03}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!get\+Timerh@{get\+Timerh}}
+\index{get\+Timerh@{get\+Timerh}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{get\+Timerh()}{getTimerh()}}
+{\footnotesize\ttfamily clock\+\_\+t Timer\+::get\+Timerh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas \hyperlink{class_project_1_1_timer_a56ce8f78c70612ecbf54cb03fcb1da03}{get\+Timerh()} gauna priskirtos valandos reikðmæ. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a189bac667a14752a9b63761c0c65f80e}\label{class_project_1_1_timer_a189bac667a14752a9b63761c0c65f80e}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!get\+Timermin@{get\+Timermin}}
+\index{get\+Timermin@{get\+Timermin}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{get\+Timermin()}{getTimermin()}}
+{\footnotesize\ttfamily clock\+\_\+t Timer\+::get\+Timermin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas \hyperlink{class_project_1_1_timer_a189bac667a14752a9b63761c0c65f80e}{get\+Timermin()} gauna priskirtos minutës reikðmæ. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a1002ea9a2d0edaf7ec20c12249f3470d}\label{class_project_1_1_timer_a1002ea9a2d0edaf7ec20c12249f3470d}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!get\+Timersec@{get\+Timersec}}
+\index{get\+Timersec@{get\+Timersec}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{get\+Timersec()}{getTimersec()}}
+{\footnotesize\ttfamily clock\+\_\+t Timer\+::get\+Timersec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas \hyperlink{class_project_1_1_timer_a1002ea9a2d0edaf7ec20c12249f3470d}{get\+Timersec()} gauna priskirtos sekundës reikðmæ. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a943ad61a8e29a89565c29f9ca03ff28b}\label{class_project_1_1_timer_a943ad61a8e29a89565c29f9ca03ff28b}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!print\+Test1@{print\+Test1}}
+\index{print\+Test1@{print\+Test1}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{print\+Test1()}{printTest1()}}
+{\footnotesize\ttfamily void Project\+::\+Timer\+::print\+Test1 (\begin{DoxyParamCaption}\item[{bool}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodas \hyperlink{class_project_1_1_timer_a943ad61a8e29a89565c29f9ca03ff28b}{print\+Test1(bool result)} patikrina ar gauta teisinga reikðmë. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a95d52359e05aa0be2140266aabe93ce5}\label{class_project_1_1_timer_a95d52359e05aa0be2140266aabe93ce5}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!set\+Timerh@{set\+Timerh}}
+\index{set\+Timerh@{set\+Timerh}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{set\+Timerh()}{setTimerh()}}
+{\footnotesize\ttfamily void Timer\+::set\+Timerh (\begin{DoxyParamCaption}\item[{clock\+\_\+t}]{h }\end{DoxyParamCaption})}
+
+
+
+Metodas set\+Timerh priskiria valandoms reikðmæ, jei ji yra tarp 0 ir 23, kitu atvëju meta klaidà. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a191f9c2f6f18921e76b5fe64c656bb65}\label{class_project_1_1_timer_a191f9c2f6f18921e76b5fe64c656bb65}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!set\+Timermin@{set\+Timermin}}
+\index{set\+Timermin@{set\+Timermin}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{set\+Timermin()}{setTimermin()}}
+{\footnotesize\ttfamily void Timer\+::set\+Timermin (\begin{DoxyParamCaption}\item[{clock\+\_\+t}]{min }\end{DoxyParamCaption})}
+
+
+
+Metodas set\+Timermin priskiria minutëms reikðmæ, jei ji yra tarp 0 ir 59, kitu atvëju meta klaidà. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_aab9ac6f73559fd3b7c8e1f641b5b57b0}\label{class_project_1_1_timer_aab9ac6f73559fd3b7c8e1f641b5b57b0}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!set\+Timersec@{set\+Timersec}}
+\index{set\+Timersec@{set\+Timersec}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{set\+Timersec()}{setTimersec()}}
+{\footnotesize\ttfamily void Timer\+::set\+Timersec (\begin{DoxyParamCaption}\item[{clock\+\_\+t}]{sec }\end{DoxyParamCaption})}
+
+
+
+metodas \hyperlink{class_project_1_1_timer_aab9ac6f73559fd3b7c8e1f641b5b57b0}{set\+Timersec()} priskiria sekundëms reikðmæ, jei ji yra tarp 0 ir 59, kitu atvëju meta klaidà. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a47d73da76c17b7a0e89f1aceed4070d4}\label{class_project_1_1_timer_a47d73da76c17b7a0e89f1aceed4070d4}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!test\+Operator1@{test\+Operator1}}
+\index{test\+Operator1@{test\+Operator1}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{test\+Operator1()}{testOperator1()}}
+{\footnotesize\ttfamily void Timer\+::test\+Operator1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodas \hyperlink{class_project_1_1_timer_a47d73da76c17b7a0e89f1aceed4070d4}{test\+Operator1()} testuoja ar gerai veikia \hyperlink{class_project_1_1_timer_ac50860ce883294b2cd67a12d01973c50}{to\+String()} metodas. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a21f25ce7c7c91dfcfd79cf5812111b43}\label{class_project_1_1_timer_a21f25ce7c7c91dfcfd79cf5812111b43}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!timer\+Go@{timer\+Go}}
+\index{timer\+Go@{timer\+Go}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{timer\+Go()}{timerGo()}}
+{\footnotesize\ttfamily void Timer\+::timer\+Go (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas \hyperlink{class_project_1_1_timer_a21f25ce7c7c91dfcfd79cf5812111b43}{timer\+Go()} pagal priskirtas valandø, minuèiø ir sekundþiø reikðmes paleidþia mini laikmatá. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_a4791af50d7f67b48310ad57362647e3d}\label{class_project_1_1_timer_a4791af50d7f67b48310ad57362647e3d}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!timer\+Test1@{timer\+Test1}}
+\index{timer\+Test1@{timer\+Test1}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{timer\+Test1()}{timerTest1()}}
+{\footnotesize\ttfamily void Timer\+::timer\+Test1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Kiti testai. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_acba87dd2e23c49c982620c431c23abff}\label{class_project_1_1_timer_acba87dd2e23c49c982620c431c23abff}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!timer\+Test2@{timer\+Test2}}
+\index{timer\+Test2@{timer\+Test2}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{timer\+Test2()}{timerTest2()}}
+{\footnotesize\ttfamily void Timer\+::timer\+Test2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_timer_aa59a890870d30a23ab5d701cc1e99e95}\label{class_project_1_1_timer_aa59a890870d30a23ab5d701cc1e99e95}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!timer\+Test3@{timer\+Test3}}
+\index{timer\+Test3@{timer\+Test3}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{timer\+Test3()}{timerTest3()}}
+{\footnotesize\ttfamily void Timer\+::timer\+Test3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_timer_ac50860ce883294b2cd67a12d01973c50}\label{class_project_1_1_timer_ac50860ce883294b2cd67a12d01973c50}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string Timer\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas to\+String paverèia objekto informacijà á tekstinæ eilutæ. 
+
+
+
+\subsection{DraugiÅ¡kÅ³ Ir SusijusiÅ³ FunkcijÅ³ Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_timer_a35c5a3ad5a5cf2fef5824f2b58390fe1}\label{class_project_1_1_timer_a35c5a3ad5a5cf2fef5824f2b58390fe1}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{class_project_1_1_timer}{Timer} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operatorius atspausdina klasës objekto turiná. 
+
+\mbox{\Hypertarget{class_project_1_1_timer_aec0e061950e4ba7ce50ff03fb66b019a}\label{class_project_1_1_timer_aec0e061950e4ba7ce50ff03fb66b019a}} 
+\index{Project\+::\+Timer@{Project\+::\+Timer}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Project\+::\+Timer@{Project\+::\+Timer}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\hyperlink{class_project_1_1_timer}{Timer} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operatorius raðo á objekto turiná. 
+
+
+
+Dokumentacija Å¡iai klasei sugeneruota iÅ¡ Å¡iÅ³ failÅ³\+:\begin{DoxyCompactItemize}
+\item 
+Web\+Blocker/\hyperlink{_timer_8h}{Timer.\+h}\item 
+Web\+Blocker/\hyperlink{_timer_8cpp}{Timer.\+cpp}\end{DoxyCompactItemize}

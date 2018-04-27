@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: WebBlocker/Timer.h iÅ¡eities tekstas</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'PaieÅ¡ka');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','PaieÅ¡ka');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d4ddf7c2ea881805d0a17eda78499356.html">WebBlocker</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Timer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_timer_8h.html">Eiti Ä¯ Å¡io failo dokumentacijÄ….</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TIMER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TIMER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespace_project.html">   18</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_project.html">Project</a> {</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_project_1_1_timer.html">   20</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_project_1_1_timer.html">Timer</a> {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        clock_t timerh;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        clock_t timermin;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        clock_t timersec;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="class_project_1_1_timer.html#a35c5a3ad5a5cf2fef5824f2b58390fe1">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="class_project_1_1_timer.html">Timer</a>&amp; p); </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">friend</span> std::istream&amp; <a class="code" href="class_project_1_1_timer.html#aec0e061950e4ba7ce50ff03fb66b019a">operator &gt;&gt; </a>(std::istream&amp; is, <a class="code" href="class_project_1_1_timer.html">Timer</a>&amp; p);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_project_1_1_timer.html#a5f16e8da27d2a5a5242dead46de05d97">Timer</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="class_project_1_1_timer.html#a14fa469c4c295c5fa6e66a4ad1092146">~Timer</a>();</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#a95d52359e05aa0be2140266aabe93ce5">setTimerh</a>(clock_t h);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#a191f9c2f6f18921e76b5fe64c656bb65">setTimermin</a>(clock_t min);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#aab9ac6f73559fd3b7c8e1f641b5b57b0">setTimersec</a>(clock_t sec);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        clock_t <a class="code" href="class_project_1_1_timer.html#a56ce8f78c70612ecbf54cb03fcb1da03">getTimerh</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        clock_t <a class="code" href="class_project_1_1_timer.html#a189bac667a14752a9b63761c0c65f80e">getTimermin</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        clock_t <a class="code" href="class_project_1_1_timer.html#a1002ea9a2d0edaf7ec20c12249f3470d">getTimersec</a>();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        std::string <a class="code" href="class_project_1_1_timer.html#ac50860ce883294b2cd67a12d01973c50">toString</a>();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#a21f25ce7c7c91dfcfd79cf5812111b43">timerGo</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#a943ad61a8e29a89565c29f9ca03ff28b">printTest1</a>(<span class="keywordtype">bool</span> result);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#a47d73da76c17b7a0e89f1aceed4070d4">testOperator1</a>();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#a4791af50d7f67b48310ad57362647e3d">timerTest1</a>();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#acba87dd2e23c49c982620c431c23abff">timerTest2</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_project_1_1_timer.html#aa59a890870d30a23ab5d701cc1e99e95">timerTest3</a>();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="class_project_1_1_timer_html_a47d73da76c17b7a0e89f1aceed4070d4"><div class="ttname"><a href="class_project_1_1_timer.html#a47d73da76c17b7a0e89f1aceed4070d4">Project::Timer::testOperator1</a></div><div class="ttdeci">static void testOperator1()</div><div class="ttdoc">Metodas testOperator1() testuoja ar gerai veikia toString() metodas. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:152</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a21f25ce7c7c91dfcfd79cf5812111b43"><div class="ttname"><a href="class_project_1_1_timer.html#a21f25ce7c7c91dfcfd79cf5812111b43">Project::Timer::timerGo</a></div><div class="ttdeci">void timerGo()</div><div class="ttdoc">Metodas timerGo() pagal priskirtas valandø, minuèiø ir sekundþiø reikðmes paleidþia mini laikmatá. ...</div><div class="ttdef"><b>Definition:</b> Timer.cpp:116</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a5f16e8da27d2a5a5242dead46de05d97"><div class="ttname"><a href="class_project_1_1_timer.html#a5f16e8da27d2a5a5242dead46de05d97">Project::Timer::Timer</a></div><div class="ttdeci">Timer()</div><div class="ttdoc">Konstruktorius be paduodmø parametrø priskiria default&amp;#39;ines reikðmes valandoms, minutëms ir sekundëms (0)...</div><div class="ttdef"><b>Definition:</b> Timer.cpp:34</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a191f9c2f6f18921e76b5fe64c656bb65"><div class="ttname"><a href="class_project_1_1_timer.html#a191f9c2f6f18921e76b5fe64c656bb65">Project::Timer::setTimermin</a></div><div class="ttdeci">void setTimermin(clock_t min)</div><div class="ttdoc">Metodas setTimermin priskiria minutëms reikðmæ, jei ji yra tarp 0 ir 59, kitu atvëju meta klaidà. ...</div><div class="ttdef"><b>Definition:</b> Timer.cpp:66</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a4791af50d7f67b48310ad57362647e3d"><div class="ttname"><a href="class_project_1_1_timer.html#a4791af50d7f67b48310ad57362647e3d">Project::Timer::timerTest1</a></div><div class="ttdeci">static void timerTest1()</div><div class="ttdoc">Kiti testai. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:175</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a95d52359e05aa0be2140266aabe93ce5"><div class="ttname"><a href="class_project_1_1_timer.html#a95d52359e05aa0be2140266aabe93ce5">Project::Timer::setTimerh</a></div><div class="ttdeci">void setTimerh(clock_t h)</div><div class="ttdoc">Metodas setTimerh priskiria valandoms reikðmæ, jei ji yra tarp 0 ir 23, kitu atvëju meta klaidà. ...</div><div class="ttdef"><b>Definition:</b> Timer.cpp:49</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_aa59a890870d30a23ab5d701cc1e99e95"><div class="ttname"><a href="class_project_1_1_timer.html#aa59a890870d30a23ab5d701cc1e99e95">Project::Timer::timerTest3</a></div><div class="ttdeci">static void timerTest3()</div><div class="ttdef"><b>Definition:</b> Timer.cpp:205</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_aab9ac6f73559fd3b7c8e1f641b5b57b0"><div class="ttname"><a href="class_project_1_1_timer.html#aab9ac6f73559fd3b7c8e1f641b5b57b0">Project::Timer::setTimersec</a></div><div class="ttdeci">void setTimersec(clock_t sec)</div><div class="ttdoc">metodas setTimersec() priskiria sekundëms reikðmæ, jei ji yra tarp 0 ir 59, kitu atvëju meta klaidà. ...</div><div class="ttdef"><b>Definition:</b> Timer.cpp:83</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_acba87dd2e23c49c982620c431c23abff"><div class="ttname"><a href="class_project_1_1_timer.html#acba87dd2e23c49c982620c431c23abff">Project::Timer::timerTest2</a></div><div class="ttdeci">static void timerTest2()</div><div class="ttdef"><b>Definition:</b> Timer.cpp:188</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_aec0e061950e4ba7ce50ff03fb66b019a"><div class="ttname"><a href="class_project_1_1_timer.html#aec0e061950e4ba7ce50ff03fb66b019a">Project::Timer::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;is, Timer &amp;p)</div><div class="ttdoc">Operatorius raðo á objekto turiná. </div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a943ad61a8e29a89565c29f9ca03ff28b"><div class="ttname"><a href="class_project_1_1_timer.html#a943ad61a8e29a89565c29f9ca03ff28b">Project::Timer::printTest1</a></div><div class="ttdeci">static void printTest1(bool result)</div><div class="ttdoc">Metodas printTest1(bool result) patikrina ar gauta teisinga reikðmë. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:142</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a14fa469c4c295c5fa6e66a4ad1092146"><div class="ttname"><a href="class_project_1_1_timer.html#a14fa469c4c295c5fa6e66a4ad1092146">Project::Timer::~Timer</a></div><div class="ttdeci">~Timer()</div><div class="ttdoc">Destruktorius iðtrina sukurtus klasës Timer objektus. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:42</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a35c5a3ad5a5cf2fef5824f2b58390fe1"><div class="ttname"><a href="class_project_1_1_timer.html#a35c5a3ad5a5cf2fef5824f2b58390fe1">Project::Timer::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Timer &amp;p)</div><div class="ttdoc">Operatorius atspausdina klasës objekto turiná. </div></div>
+<div class="ttc" id="class_project_1_1_timer_html_ac50860ce883294b2cd67a12d01973c50"><div class="ttname"><a href="class_project_1_1_timer.html#ac50860ce883294b2cd67a12d01973c50">Project::Timer::toString</a></div><div class="ttdeci">std::string toString()</div><div class="ttdoc">Metodas toString paverèia objekto informacijà á tekstinæ eilutæ. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:109</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a1002ea9a2d0edaf7ec20c12249f3470d"><div class="ttname"><a href="class_project_1_1_timer.html#a1002ea9a2d0edaf7ec20c12249f3470d">Project::Timer::getTimersec</a></div><div class="ttdeci">clock_t getTimersec()</div><div class="ttdoc">Metodas getTimersec() gauna priskirtos sekundës reikðmæ. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:105</div></div>
+<div class="ttc" id="namespace_project_html"><div class="ttname"><a href="namespace_project.html">Project</a></div><div class="ttdef"><b>Definition:</b> Timer.h:18</div></div>
+<div class="ttc" id="class_project_1_1_timer_html"><div class="ttname"><a href="class_project_1_1_timer.html">Project::Timer</a></div><div class="ttdoc">Klasë Timer priskiria teisingas reikðmes valandoms, minutës, sekundëms . Nustaèius laikà, klasës paskirtis p...</div><div class="ttdef"><b>Definition:</b> Timer.h:20</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a189bac667a14752a9b63761c0c65f80e"><div class="ttname"><a href="class_project_1_1_timer.html#a189bac667a14752a9b63761c0c65f80e">Project::Timer::getTimermin</a></div><div class="ttdeci">clock_t getTimermin()</div><div class="ttdoc">Metodas getTimermin() gauna priskirtos minutës reikðmæ. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:102</div></div>
+<div class="ttc" id="class_project_1_1_timer_html_a56ce8f78c70612ecbf54cb03fcb1da03"><div class="ttname"><a href="class_project_1_1_timer.html#a56ce8f78c70612ecbf54cb03fcb1da03">Project::Timer::getTimerh</a></div><div class="ttdeci">clock_t getTimerh()</div><div class="ttdoc">Metodas getTimerh() gauna priskirtos valandos reikðmæ. </div><div class="ttdef"><b>Definition:</b> Timer.cpp:99</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Sugeneruota &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

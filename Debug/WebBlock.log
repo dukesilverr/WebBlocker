@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+  Blocker.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  WebBlock.vcxproj -> C:\Users\Doviles\Documents\Visual Studio 2015\Projects\WebBlocker\WebBlocker\Debug\WebBlocker.exe
+  WebBlock.vcxproj -> C:\Users\Doviles\Documents\Visual Studio 2015\Projects\WebBlocker\WebBlocker\Debug\WebBlocker.pdb (Partial PDB)

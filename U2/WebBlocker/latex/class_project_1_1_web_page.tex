@@ -1,0 +1,234 @@
+\hypertarget{class_project_1_1_web_page}{}\section{Project\+:\+:Web\+Page KlasÄ—}
+\label{class_project_1_1_web_page}\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+
+
+Klasës \hyperlink{class_project_1_1_web_page}{Web\+Page} paskirtis inicializuoti, uþblokuoti, atblokuoti tinklapá.  
+
+
+
+
+{\ttfamily \#include $<$Web\+Page.\+h$>$}
+
+\subsection*{VieÅ¡i Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_project_1_1_web_page_a07ef27add77ba1b3e218ec4a190e46f6}{Web\+Page} ()
+\begin{DoxyCompactList}\small\item\em Numatytasis konstruktorius. \end{DoxyCompactList}\item 
+\hyperlink{class_project_1_1_web_page_a664f0d1f749bb247df64666b9259ec5c}{Web\+Page} (std\+::string webpage)
+\begin{DoxyCompactList}\small\item\em Konstruktorius inicializuojantis klasës objektà, koks tinklapis bus blokuojamas, priskiriama pirma reikðmë. \end{DoxyCompactList}\item 
+\hyperlink{class_project_1_1_web_page_a51a243430487dba0296e00f4cbff39a5}{$\sim$\+Web\+Page} ()
+\begin{DoxyCompactList}\small\item\em Destruktorius, atlaisvinantis atmintá, iðtrinantis objektà. \end{DoxyCompactList}\item 
+bool \hyperlink{class_project_1_1_web_page_a8478fac12a3bfa919b188b9a3fe88b30}{is\+Correct} (std\+::string word)
+\begin{DoxyCompactList}\small\item\em Metodas, graþinantis true reikðmæ, jei þodis paduotas þodis atitinka reikalavimus, nëra tuðèias. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_web_page_aa0b486716c7a2eda906e640fd1f4c888}{set\+Webpage} (std\+::string web)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Setter\textquotesingle{}is\char`\"{} -\/ prikiria reikðmæ webpage, jei paduodama tekstinë eilutë atitinka metodo is\+Correct reikalavimus. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_project_1_1_web_page_ad8d1b4e4c0dba4f6dad5df848c975166}{get\+Webpage} ()
+\begin{DoxyCompactList}\small\item\em Getter\textquotesingle{}is" gràþina webpage lauko reikðmæ. \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_web_page_a8f69cb8d6b87d12ca0dd45906cbe939b}{writing\+To\+File} (std\+::string text, std\+::string path=\char`\"{}C\+:\textbackslash{}indows\textbackslash{}ystem32\textbackslash{}rivers\textbackslash{}tc\textbackslash{}osts\char`\"{})
+\begin{DoxyCompactList}\small\item\em Metodas, áraðantis á numatytà kelià C\+:\textbackslash{}Windows\textbackslash{}System32\textbackslash{}drivers\textbackslash{}etc\textbackslash{}hosts (á ðià vietà áraðius tinklapi su tam tikru kodu priekyje, jis uþblokuojamas), paduotà tekstà. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_project_1_1_web_page_ad12e94aa1a3ddc412cf9b2f613b3f142}{concat\+Web\+Name} (std\+::string web)
+\begin{DoxyCompactList}\small\item\em Metodas, sujungiantis paduotà tekstinæ eilutæ (puslapá, kuris bus blokuojamas), su tam tikru tekstu, kad bûtø galima uþblokuoti. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{class_project_1_1_web_page_a8bbfd95f96840dfb6db43ca621a0240a}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em Metodas, kuris sukuria tektinæ objekto reprezentacijà. \end{DoxyCompactList}\item 
+int \hyperlink{class_project_1_1_web_page_a8ed690a6f44507d7fc603c081ac8d67c}{return\+Line} (std\+::string file, std\+::string search)
+\begin{DoxyCompactList}\small\item\em Metodas, surandantis ir gràþinantis faile rastos tekstinës eilutës vietà failæ (eilutæ). \end{DoxyCompactList}\item 
+void \hyperlink{class_project_1_1_web_page_a76802591a808d7b9859a50dfacb144aa}{delete\+Lines} (const std\+::string \&filename, int start, int skip=1)
+\begin{DoxyCompactList}\small\item\em Metodas iðtrinantis eilutes ið failo. (Tinklapio atblokavimas, iðtrinant eilutæ ið hosts failo.) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statiniai VieÅ¡i Metodai}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_project_1_1_web_page_a5c933ce4b1c2148c06eccad895b565ea}{print\+Test2} (bool result)
+\begin{DoxyCompactList}\small\item\em Metodai klasës testavimui. \end{DoxyCompactList}\item 
+static void \hyperlink{class_project_1_1_web_page_af6f9a9731bd9d54afdd8865aac4388e6}{test\+Operator2} ()
+\item 
+static void \hyperlink{class_project_1_1_web_page_aa1eb5fefce5cd8b0358dd9ef725bf60c}{web\+Test1} ()
+\item 
+static void \hyperlink{class_project_1_1_web_page_a0259d5061f71619c54f6c9feb7b47b94}{web\+Test2} ()
+\item 
+static void \hyperlink{class_project_1_1_web_page_a4fc34601892df0723b187da9894c04c2}{web\+Test3} ()
+\end{DoxyCompactItemize}
+\subsection*{Draugai}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_project_1_1_web_page_afc30ba350232f78941f8208835ea5f03}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{class_project_1_1_web_page}{Web\+Page} \&p)
+\begin{DoxyCompactList}\small\item\em Perraðyti I/O operatoriai. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{class_project_1_1_web_page_a54182d83685ff46a9a4724be5afd4db5}{operator$>$$>$} (std\+::istream \&is, \hyperlink{class_project_1_1_web_page}{Web\+Page} \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Smulkus apraÅ¡ymas}
+Klasës \hyperlink{class_project_1_1_web_page}{Web\+Page} paskirtis inicializuoti, uþblokuoti, atblokuoti tinklapá. 
+
+\subsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_web_page_a07ef27add77ba1b3e218ec4a190e46f6}\label{class_project_1_1_web_page_a07ef27add77ba1b3e218ec4a190e46f6}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!Web\+Page@{Web\+Page}}
+\index{Web\+Page@{Web\+Page}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{Web\+Page()}{WebPage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Web\+Page\+::\+Web\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Numatytasis konstruktorius. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a664f0d1f749bb247df64666b9259ec5c}\label{class_project_1_1_web_page_a664f0d1f749bb247df64666b9259ec5c}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!Web\+Page@{Web\+Page}}
+\index{Web\+Page@{Web\+Page}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{Web\+Page()}{WebPage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Web\+Page\+::\+Web\+Page (\begin{DoxyParamCaption}\item[{std\+::string}]{webpage }\end{DoxyParamCaption})}
+
+
+
+Konstruktorius inicializuojantis klasës objektà, koks tinklapis bus blokuojamas, priskiriama pirma reikðmë. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a51a243430487dba0296e00f4cbff39a5}\label{class_project_1_1_web_page_a51a243430487dba0296e00f4cbff39a5}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!````~Web\+Page@{$\sim$\+Web\+Page}}
+\index{````~Web\+Page@{$\sim$\+Web\+Page}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{$\sim$\+Web\+Page()}{~WebPage()}}
+{\footnotesize\ttfamily Web\+Page\+::$\sim$\+Web\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktorius, atlaisvinantis atmintá, iðtrinantis objektà. 
+
+
+
+\subsection{MetodÅ³ Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_web_page_ad12e94aa1a3ddc412cf9b2f613b3f142}\label{class_project_1_1_web_page_ad12e94aa1a3ddc412cf9b2f613b3f142}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!concat\+Web\+Name@{concat\+Web\+Name}}
+\index{concat\+Web\+Name@{concat\+Web\+Name}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{concat\+Web\+Name()}{concatWebName()}}
+{\footnotesize\ttfamily std\+::string Web\+Page\+::concat\+Web\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{web }\end{DoxyParamCaption})}
+
+
+
+Metodas, sujungiantis paduotà tekstinæ eilutæ (puslapá, kuris bus blokuojamas), su tam tikru tekstu, kad bûtø galima uþblokuoti. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a76802591a808d7b9859a50dfacb144aa}\label{class_project_1_1_web_page_a76802591a808d7b9859a50dfacb144aa}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!delete\+Lines@{delete\+Lines}}
+\index{delete\+Lines@{delete\+Lines}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{delete\+Lines()}{deleteLines()}}
+{\footnotesize\ttfamily void Web\+Page\+::delete\+Lines (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{int}]{start,  }\item[{int}]{skip = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Metodas iðtrinantis eilutes ið failo. (Tinklapio atblokavimas, iðtrinant eilutæ ið hosts failo.) 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_ad8d1b4e4c0dba4f6dad5df848c975166}\label{class_project_1_1_web_page_ad8d1b4e4c0dba4f6dad5df848c975166}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!get\+Webpage@{get\+Webpage}}
+\index{get\+Webpage@{get\+Webpage}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{get\+Webpage()}{getWebpage()}}
+{\footnotesize\ttfamily std\+::string Web\+Page\+::get\+Webpage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter\textquotesingle{}is" gràþina webpage lauko reikðmæ. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a8478fac12a3bfa919b188b9a3fe88b30}\label{class_project_1_1_web_page_a8478fac12a3bfa919b188b9a3fe88b30}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!is\+Correct@{is\+Correct}}
+\index{is\+Correct@{is\+Correct}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{is\+Correct()}{isCorrect()}}
+{\footnotesize\ttfamily bool Web\+Page\+::is\+Correct (\begin{DoxyParamCaption}\item[{std\+::string}]{word }\end{DoxyParamCaption})}
+
+
+
+Metodas, graþinantis true reikðmæ, jei þodis paduotas þodis atitinka reikalavimus, nëra tuðèias. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a5c933ce4b1c2148c06eccad895b565ea}\label{class_project_1_1_web_page_a5c933ce4b1c2148c06eccad895b565ea}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!print\+Test2@{print\+Test2}}
+\index{print\+Test2@{print\+Test2}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{print\+Test2()}{printTest2()}}
+{\footnotesize\ttfamily void Project\+::\+Web\+Page\+::print\+Test2 (\begin{DoxyParamCaption}\item[{bool}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodai klasës testavimui. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a8ed690a6f44507d7fc603c081ac8d67c}\label{class_project_1_1_web_page_a8ed690a6f44507d7fc603c081ac8d67c}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!return\+Line@{return\+Line}}
+\index{return\+Line@{return\+Line}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{return\+Line()}{returnLine()}}
+{\footnotesize\ttfamily int Web\+Page\+::return\+Line (\begin{DoxyParamCaption}\item[{std\+::string}]{file,  }\item[{std\+::string}]{search }\end{DoxyParamCaption})}
+
+
+
+Metodas, surandantis ir gràþinantis faile rastos tekstinës eilutës vietà failæ (eilutæ). 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_aa0b486716c7a2eda906e640fd1f4c888}\label{class_project_1_1_web_page_aa0b486716c7a2eda906e640fd1f4c888}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!set\+Webpage@{set\+Webpage}}
+\index{set\+Webpage@{set\+Webpage}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{set\+Webpage()}{setWebpage()}}
+{\footnotesize\ttfamily void Web\+Page\+::set\+Webpage (\begin{DoxyParamCaption}\item[{std\+::string}]{web }\end{DoxyParamCaption})}
+
+
+
+\char`\"{}\+Setter\textquotesingle{}is\char`\"{} -\/ prikiria reikðmæ webpage, jei paduodama tekstinë eilutë atitinka metodo is\+Correct reikalavimus. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_af6f9a9731bd9d54afdd8865aac4388e6}\label{class_project_1_1_web_page_af6f9a9731bd9d54afdd8865aac4388e6}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!test\+Operator2@{test\+Operator2}}
+\index{test\+Operator2@{test\+Operator2}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{test\+Operator2()}{testOperator2()}}
+{\footnotesize\ttfamily void Web\+Page\+::test\+Operator2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a8bbfd95f96840dfb6db43ca621a0240a}\label{class_project_1_1_web_page_a8bbfd95f96840dfb6db43ca621a0240a}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily std\+::string Web\+Page\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metodas, kuris sukuria tektinæ objekto reprezentacijà. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_aa1eb5fefce5cd8b0358dd9ef725bf60c}\label{class_project_1_1_web_page_aa1eb5fefce5cd8b0358dd9ef725bf60c}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!web\+Test1@{web\+Test1}}
+\index{web\+Test1@{web\+Test1}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{web\+Test1()}{webTest1()}}
+{\footnotesize\ttfamily void Web\+Page\+::web\+Test1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a0259d5061f71619c54f6c9feb7b47b94}\label{class_project_1_1_web_page_a0259d5061f71619c54f6c9feb7b47b94}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!web\+Test2@{web\+Test2}}
+\index{web\+Test2@{web\+Test2}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{web\+Test2()}{webTest2()}}
+{\footnotesize\ttfamily void Web\+Page\+::web\+Test2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a4fc34601892df0723b187da9894c04c2}\label{class_project_1_1_web_page_a4fc34601892df0723b187da9894c04c2}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!web\+Test3@{web\+Test3}}
+\index{web\+Test3@{web\+Test3}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{web\+Test3()}{webTest3()}}
+{\footnotesize\ttfamily void Web\+Page\+::web\+Test3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a8f69cb8d6b87d12ca0dd45906cbe939b}\label{class_project_1_1_web_page_a8f69cb8d6b87d12ca0dd45906cbe939b}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!writing\+To\+File@{writing\+To\+File}}
+\index{writing\+To\+File@{writing\+To\+File}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{writing\+To\+File()}{writingToFile()}}
+{\footnotesize\ttfamily void Web\+Page\+::writing\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{std\+::string}]{path = {\ttfamily \char`\"{}C\+:\textbackslash{}\textbackslash{}Windows\textbackslash{}\textbackslash{}System32\textbackslash{}\textbackslash{}drivers\textbackslash{}\textbackslash{}etc\textbackslash{}\textbackslash{}hosts\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Metodas, áraðantis á numatytà kelià C\+:\textbackslash{}Windows\textbackslash{}System32\textbackslash{}drivers\textbackslash{}etc\textbackslash{}hosts (á ðià vietà áraðius tinklapi su tam tikru kodu priekyje, jis uþblokuojamas), paduotà tekstà. 
+
+
+
+\subsection{DraugiÅ¡kÅ³ Ir SusijusiÅ³ FunkcijÅ³ Dokumentacija}
+\mbox{\Hypertarget{class_project_1_1_web_page_afc30ba350232f78941f8208835ea5f03}\label{class_project_1_1_web_page_afc30ba350232f78941f8208835ea5f03}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{class_project_1_1_web_page}{Web\+Page} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Perraðyti I/O operatoriai. 
+
+\mbox{\Hypertarget{class_project_1_1_web_page_a54182d83685ff46a9a4724be5afd4db5}\label{class_project_1_1_web_page_a54182d83685ff46a9a4724be5afd4db5}} 
+\index{Project\+::\+Web\+Page@{Project\+::\+Web\+Page}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Project\+::\+Web\+Page@{Project\+::\+Web\+Page}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\hyperlink{class_project_1_1_web_page}{Web\+Page} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dokumentacija Å¡iai klasei sugeneruota iÅ¡ Å¡iÅ³ failÅ³\+:\begin{DoxyCompactItemize}
+\item 
+Web\+Blocker/\hyperlink{_web_page_8h}{Web\+Page.\+h}\item 
+Web\+Blocker/\hyperlink{_web_page_8cpp}{Web\+Page.\+cpp}\end{DoxyCompactItemize}
